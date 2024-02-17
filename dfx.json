@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "bounty_proj_backend": {
+      "main": "src/bounty_proj_backend/main.mo",
+      "type": "motoko"
+    },
+    "bounty_proj_frontend": {
+      "dependencies": [
+        "bounty_proj_backend"
+      ],
+      "source": [
+        "src/bounty_proj_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "bounty_proj_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
